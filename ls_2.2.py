@@ -21,7 +21,7 @@ for el in my_list:
         second_list.append(f'"{number}"')
     elif ('+' or '-') in el:
         number = f'{el[0]}{int(el[-1]):02}'
-        second_list.extend(['"', number, '"'])
+        second_list.append(f'"{number}"')
     else:
         second_list.append(el)
 
